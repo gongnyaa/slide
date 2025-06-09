@@ -1,123 +1,283 @@
 ---
 marp: true
-theme: default
+theme: gaia
 paginate: true
 class: lead
+style: |
+  section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  }
+  section.title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-align: center;
+  }
+  section.success {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  }
+  section.failure {
+    background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+  }
+  section.solution {
+    background: linear-gradient(135deg, #fdbb2d 0%, #22c1c3 100%);
+  }
+  section.quote {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+  }
+  h1 {
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    color: #81c784;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    border-bottom: 3px solid #81c784;
+    padding-bottom: 0.2em;
+  }
+  h3 {
+    color: #fff3e0;
+    background: rgba(255,255,255,0.1);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .highlight-box {
+    background: rgba(255,255,255,0.15);
+    padding: 1.5em;
+    border-radius: 15px;
+    border-left: 5px solid #ffeb3b;
+    margin: 1em 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  .icon-large {
+    font-size: 4em;
+    margin: 0.2em;
+  }
+  .two-column {
+    display: flex;
+    gap: 2em;
+  }
+  .column {
+    flex: 1;
+  }
+  ul li {
+    background: rgba(255,255,255,0.1);
+    margin: 0.5em 0;
+    padding: 0.8em;
+    border-radius: 8px;
+    border-left: 4px solid #81c784;
+  }
+  .success-item {
+    border-left-color: #4caf50 !important;
+    background: rgba(76,175,80,0.2);
+  }
+  .failure-item {
+    border-left-color: #f44336 !important;
+    background: rgba(244,67,54,0.2);
+  }
+  .solution-item {
+    border-left-color: #ff9800 !important;
+    background: rgba(255,152,0,0.2);
+  }
 ---
 
-# AIさんの努力を"無駄"にしないために  
+<!-- _class: title -->
+# 🤖 AIさんの努力を"無駄"にしないために  
 ### 〜失敗から学ぶAI駆動開発の環境づくり〜
 
 ---
 
-## 自己紹介
+## 👋 自己紹介
 
-- 英語物語というスマホゲームを  
-　**11年** 開発・運営しています  
-- 2025年 Appliv英語アプリ
-　**No.1** 獲得しました🎉
-![appliv](./image/appliv.png)
+<div class="highlight-box">
 
+**📱 英語物語というスマホゲームを11年開発・運営**
+
+**🏆 2025年 Appliv英語アプリ No.1 獲得🎉**
+
+</div>
+
+![bg right:40% 90%](./image/appliv.png)
 
 ---
 
-## 皆さんAI駆動開発は順調ですか？
+<!-- _class: failure -->
+## 💭 皆さんAI駆動開発は順調ですか？
+
+<div class="icon-large">😅</div>
+
 ### 僕は全然順調ではありません。
 
 ---
 
-## ゴンの場合：成功するケース
+<!-- _class: success -->
+## ✅ ゴンの場合：成功するケース
 
-- 自分で技術もプロジェクトも理解してる環境で
-    - コード補完
-    - 明確な指示とレビューで依頼
+<div class="two-column">
+<div class="column">
 
+### 🎯 成功の条件
+- 自分で技術理解済み
+- プロジェクト把握済み
 
----
+</div>
+<div class="column">
 
-## ゴンの場合：失敗するケース
+### 💡 成功パターン
+- **コード補完**で効率化
+- **明確な指示とレビュー**で依頼
 
-- 新しい技術やプロジェクトで、
-    - 雑な指示でレビューをサボる
-    - ⇒保守できず絶望
-    - ⇒プロジェクト中止 or 書き直し
-
----
-
-## でもゴンは、計画もレビューもなるべくサボって、楽がしたい！！！
-
----
-
-
-
-## そのために、理想のAI駆動開発を模索
-
-- まずは自分で技術理解
-- AIの作った計画書を使って自分で書く！
+</div>
+</div>
 
 ---
 
-## 結局は…
+<!-- _class: failure -->
+## ❌ ゴンの場合：失敗するケース
+
+<div class="highlight-box">
+
+**新しい技術やプロジェクトで...**
+
+- 🚫 雑な指示でレビューをサボる
+- ⬇️ 保守できず絶望
+- 💥 プロジェクト中止 or 書き直し
+
+</div>
+
 ---
-### 面倒くさくなって、
+
+## 😴 でもゴンは...
+
+<div class="icon-large">🛋️</div>
+
+### 計画もレビューもなるべくサボって、
+### **楽がしたい！！！**
+
+---
+
+## 🔍 そのために、理想のAI駆動開発を模索
+
+<div class="highlight-box">
+
+- 📚 **まずは自分で技術理解**
+- 📋 **AIの作った計画書を使って自分で書く！**
+
+</div>
+
+---
+
+## 😰 結局は...
+
+---
+
+<!-- _class: failure -->
+### 💤 面倒くさくなって、
 ### ついAIに書かせ、レビューをサボる。
 
 ---
 
-## しかし！！！ついに！！！最近
+<!-- _class: solution -->
+## 🎉 しかし！！！ついに！！！最近
+
 ---
-# AIさんの努力を
-## "無駄"にしない方法を発見した
+
+<!-- _class: solution -->
+# 💡 AIさんの努力を
+## **"無駄"にしない方法を発見した**
 ### （気がする）
 
 ---
 
-# AIさんの努力を "無駄"にしない方法とは？
+<!-- _class: solution -->
+# 🛡️ AIさんに
 ### **致命的な失敗をさせない** 環境
 
 ---
 
-# つまり
-### 　**致命的でない失敗ができる** 環境
+<!-- _class: solution -->
+# 🛡️ AIさんに
+### **致命的な失敗をさせない** 環境
+# 🔄 つまり
+### **致命的でない失敗ができる** 環境
 
 ---
 
-# そして
-###　**失敗から成長できる** 環境
+<!-- _class: solution -->
+# 🛡️ AIさんに
+### **致命的な失敗をさせない** 環境
+# 🔄 つまり
+### **致命的でない失敗ができる** 環境
+# 🌱 そして
+### **失敗から成長できる** 環境
 
 ---
 
-## どうやって？？ （今回はリファクタに言及）
+<!-- _class: solution -->
+## 🤔 どうやって？？ （今回はリファクタに言及）
 
-### 🛡 上位レベルのテストの充実
+<div class="two-column">
+<div class="column">
 
-- 汚いコード書いても、後でリファクタできる。
+### 🛡 **上位レベルのテストの充実**
+<div class="solution-item">
+汚いコード書いても、後でリファクタできる。
+</div>
 
-### 🛡 明確なアーキテクチャ**DDDの実践**
+### 🛡 **明確なアーキテクチャDDDの実践**
+<div class="solution-item">
+レイヤー構造とファイル名位はレビューできるので、後でリファクタ指示できる。
+</div>
 
-- レイヤー構造とファイル名位はレビューできるので、後でリファクタ指示できる。
+</div>
+<div class="column">
 
-### 🛡 AIさんのタスク完了後がAIがKPTするフロー
-- 失敗してから、「今」必要なリファクタをAIさんが提案できる。
+### 🛡 **AIさんのタスク完了後がAIがKPTするフロー**
+<div class="solution-item">
+失敗してから、「今」必要なリファクタをAIさんが提案できる。
+</div>
+
+</div>
+</div>
 
 ---
 
-# 昔、監査法人時代の社長に言われた言葉
-「カネゴンよぉー　成長したいなら、小さな失敗をたくさんしろ。致命的な失敗以外は、そこから学べば全て成功だ。」
+<!-- _class: quote -->
+# 💼 昔、監査法人時代の社長に言われた言葉
+
+<div class="highlight-box">
+
+**「カネゴンよぉー　成長したいなら、小さな失敗をたくさんしろ。致命的な失敗以外は、そこから学べば全て成功だ。」**
+
+</div>
 
 ---
 
-## まとめ
-> AIさんの努力を"無駄"にしないために、
-> 失敗してもいい環境を作り、
-> 失敗から少しづつ成長できる環境が大切！
+## 📝 まとめ
 
-### 人間と同じだね！！！
+<div class="highlight-box">
+
+**🤖 AIさんの努力を"無駄"にしないために、**
+**🔄 失敗してもいい環境を作り、**
+**🌱 失敗から少しづつ成長できる環境が大切！**
+
+</div>
+
+### 👥 人間と同じだね！！！
 
 ---
 
-## ありがとうございました！
+<!-- _class: title -->
+## 🙏 ありがとうございました！
 
-### @Gong_nyaa  
-英語物語 / Next AI Synergy
+<div class="highlight-box">
+
+### 🐦 @Gong_nyaa  
+### 🎮 英語物語 / Next AI Synergy
+
+</div>
 
