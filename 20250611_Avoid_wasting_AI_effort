@@ -26,50 +26,72 @@ style: |
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
     color: #333;
   }
+  section.lazy {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  }
   h1 {
     color: #ffeb3b;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-size: 3.5em;
+    font-size: 3.2em;
     margin-bottom: 0.5em;
+    line-height: 1.2;
   }
   h2 {
     color: #81c784;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     border-bottom: 3px solid #81c784;
     padding-bottom: 0.2em;
+    font-size: 2.2em;
   }
   h3 {
     color: #fff3e0;
-    background: rgba(255,255,255,0.1);
-    padding: 0.5em 1em;
-    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    padding: 0.8em 1.2em;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 1.8em;
+    line-height: 1.4;
   }
   .highlight-box {
     background: rgba(255,255,255,0.15);
-    padding: 1.5em;
+    padding: 1.8em;
     border-radius: 15px;
     border-left: 5px solid #ffeb3b;
     margin: 1em 0;
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    font-size: 1.3em;
   }
   .icon-large {
-    font-size: 4em;
-    margin: 0.2em;
+    font-size: 5em;
+    margin: 0.3em;
+    text-align: center;
   }
   .two-column {
     display: flex;
-    gap: 2em;
+    gap: 2.5em;
+    font-size: 1.1em;
   }
   .column {
     flex: 1;
   }
+  .big-text {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .medium-text {
+    font-size: 2em;
+    text-align: center;
+    margin: 0.3em 0;
+  }
   ul li {
     background: rgba(255,255,255,0.1);
-    margin: 0.5em 0;
-    padding: 0.8em;
-    border-radius: 8px;
+    margin: 0.8em 0;
+    padding: 1em;
+    border-radius: 10px;
     border-left: 4px solid #81c784;
+    font-size: 1.2em;
   }
   .success-item {
     border-left-color: #4caf50 !important;
@@ -82,6 +104,8 @@ style: |
   .solution-item {
     border-left-color: #ff9800 !important;
     background: rgba(255,152,0,0.2);
+    padding: 1.2em;
+    font-size: 1.1em;
   }
 ---
 
@@ -117,46 +141,32 @@ style: |
 <!-- _class: success -->
 ## ✅ ゴンの場合：成功するケース
 
-<div class="two-column">
-<div class="column">
+### 🎯 自分で技術もプロジェクトも理解してる環境で
 
-### 🎯 成功の条件
-- 自分で技術理解済み
-- プロジェクト把握済み
-
-</div>
-<div class="column">
-
-### 💡 成功パターン
-- **コード補完**で効率化
-- **明確な指示とレビュー**で依頼
-
-</div>
-</div>
+- **💡 コード補完**で効率化
+- **📝 明確な指示とレビュー**で依頼
 
 ---
 
 <!-- _class: failure -->
 ## ❌ ゴンの場合：失敗するケース
 
-<div class="highlight-box">
+### 🚨 新しい技術やプロジェクトで...
 
-**新しい技術やプロジェクトで...**
-
-- 🚫 雑な指示でレビューをサボる
-- ⬇️ 保守できず絶望
-- 💥 プロジェクト中止 or 書き直し
-
-</div>
+- **🚫 雑な指示**でレビューをサボる
+- **⬇️ 保守できず**絶望
+- **💥 プロジェクト中止** or 書き直し
 
 ---
 
+<!-- _class: lazy -->
 ## 😴 でもゴンは...
 
 <div class="icon-large">🛋️</div>
 
-### 計画もレビューもなるべくサボって、
-### **楽がしたい！！！**
+<div class="big-text">**楽がしたい！！！**</div>
+
+<div class="medium-text">計画もレビューも<br/>なるべくサボりたい</div>
 
 ---
 
@@ -164,84 +174,68 @@ style: |
 
 <div class="highlight-box">
 
-- 📚 **まずは自分で技術理解**
-- 📋 **AIの作った計画書を使って自分で書く！**
+**📚 まずは自分で技術理解**
+
+**📋 AIの作った計画書を使って自分で書く！**
 
 </div>
 
 ---
 
+<!-- _class: failure -->
 ## 😰 結局は...
 
----
+<div class="big-text">💤 面倒くさくなって</div>
 
-<!-- _class: failure -->
-### 💤 面倒くさくなって、
-### ついAIに書かせ、レビューをサボる。
+<div class="medium-text">ついAIに書かせ、<br/>レビューをサボる。</div>
 
 ---
 
 <!-- _class: solution -->
-## 🎉 しかし！！！ついに！！！最近
+## 🎉 しかし！ついに！最近
+
+<div class="big-text">💡 発見した！</div>
 
 ---
 
 <!-- _class: solution -->
-# 💡 AIさんの努力を
-## **"無駄"にしない方法を発見した**
+# AIさんの努力を
+## **"無駄"にしない方法**
 ### （気がする）
 
 ---
 
 <!-- _class: solution -->
-# 🛡️ AIさんに
-### **致命的な失敗をさせない** 環境
+# 🛡️ 核心は
+
+<div class="big-text">**致命的な失敗をさせない環境**</div>
+
+<div class="medium-text">⬇️</div>
+
+<div class="medium-text">**致命的でない失敗ができる環境**</div>
+
+<div class="medium-text">⬇️</div>
+
+<div class="medium-text">**失敗から成長できる環境**</div>
 
 ---
 
 <!-- _class: solution -->
-# 🛡️ AIさんに
-### **致命的な失敗をさせない** 環境
-# 🔄 つまり
-### **致命的でない失敗ができる** 環境
-
----
-
-<!-- _class: solution -->
-# 🛡️ AIさんに
-### **致命的な失敗をさせない** 環境
-# 🔄 つまり
-### **致命的でない失敗ができる** 環境
-# 🌱 そして
-### **失敗から成長できる** 環境
-
----
-
-<!-- _class: solution -->
-## 🤔 どうやって？？ （今回はリファクタに言及）
-
-<div class="two-column">
-<div class="column">
+## 🤔 どうやって？？
 
 ### 🛡 **上位レベルのテストの充実**
 <div class="solution-item">
-汚いコード書いても、後でリファクタできる。
+汚いコード書いても、後でリファクタできる
 </div>
 
-### 🛡 **明確なアーキテクチャDDDの実践**
+### 🛡 **明確なアーキテクチャ（DDD）の実践**
 <div class="solution-item">
-レイヤー構造とファイル名位はレビューできるので、後でリファクタ指示できる。
+レイヤー構造とファイル名はレビューできるので、後でリファクタ指示できる
 </div>
 
-</div>
-<div class="column">
-
-### 🛡 **AIさんのタスク完了後がAIがKPTするフロー**
+### 🛡 **AIさんのタスク完了後にKPTするフロー**
 <div class="solution-item">
-失敗してから、「今」必要なリファクタをAIさんが提案できる。
-</div>
-
-</div>
+失敗してから、「今」必要なリファクタをAIさんが提案できる
 </div>
 
 ---
@@ -261,8 +255,10 @@ style: |
 
 <div class="highlight-box">
 
-**🤖 AIさんの努力を"無駄"にしないために、**
-**🔄 失敗してもいい環境を作り、**
+**🤖 AIさんの努力を"無駄"にしないために**
+
+**🔄 失敗してもいい環境を作り**
+
 **🌱 失敗から少しづつ成長できる環境が大切！**
 
 </div>
