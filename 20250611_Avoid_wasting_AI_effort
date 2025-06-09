@@ -5,118 +5,53 @@ paginate: true
 class: lead
 style: |
   section {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: white;
     font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-  }
-  section.title {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    text-align: center;
-  }
-  section.success {
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-  }
-  section.failure {
-    background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
-  }
-  section.solution {
-    background: linear-gradient(135deg, #fdbb2d 0%, #22c1c3 100%);
-  }
-  section.quote {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-    color: #333;
-  }
-  section.lazy {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    padding: 60px;
   }
   h1 {
-    color: #ffeb3b;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-size: 2.8em;
-    margin-bottom: 0.4em;
-    line-height: 1.1;
+    font-size: 2.2em;
+    margin-bottom: 0.8em;
+    line-height: 1.2;
   }
   h2 {
-    color: #81c784;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    border-bottom: 3px solid #81c784;
-    padding-bottom: 0.2em;
-    font-size: 2em;
-    line-height: 1.2;
+    font-size: 1.8em;
+    margin-bottom: 0.6em;
+    line-height: 1.3;
   }
   h3 {
-    color: #fff3e0;
-    background: rgba(255,255,255,0.15);
-    padding: 0.6em 1em;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    font-size: 1.5em;
-    line-height: 1.3;
+    font-size: 1.4em;
+    margin: 0.5em 0;
+    line-height: 1.4;
   }
   .highlight-box {
-    background: rgba(255,255,255,0.15);
-    padding: 1.5em;
-    border-radius: 15px;
-    border-left: 5px solid #ffeb3b;
+    background: rgba(0,0,0,0.1);
+    padding: 1.2em;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
     margin: 1em 0;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    font-size: 1.2em;
-    line-height: 1.4;
-  }
-  .icon-large {
-    font-size: 4em;
-    margin: 0.2em;
-    text-align: center;
-  }
-  .two-column {
-    display: flex;
-    gap: 2.5em;
-    font-size: 1.1em;
-  }
-  .column {
-    flex: 1;
   }
   .big-text {
-    font-size: 2.2em;
+    font-size: 1.8em;
     text-align: center;
-    margin: 0.4em 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    line-height: 1.2;
+    margin: 0.8em 0;
+    font-weight: bold;
   }
   .medium-text {
-    font-size: 1.7em;
+    font-size: 1.4em;
     text-align: center;
-    margin: 0.3em 0;
-    line-height: 1.3;
+    margin: 0.5em 0;
   }
   ul li {
-    background: rgba(255,255,255,0.1);
-    margin: 0.6em 0;
-    padding: 0.8em;
-    border-radius: 10px;
-    border-left: 4px solid #81c784;
-    font-size: 1.1em;
-  }
-  .success-item {
-    border-left-color: #4caf50 !important;
-    background: rgba(76,175,80,0.2);
-  }
-  .failure-item {
-    border-left-color: #f44336 !important;
-    background: rgba(244,67,54,0.2);
-  }
-  .solution-item {
-    border-left-color: #ff9800 !important;
-    background: rgba(255,152,0,0.2);
-    padding: 1em;
+    margin: 0.4em 0;
+    padding: 0.3em;
     font-size: 1em;
-    line-height: 1.4;
-    margin: 0.5em 0;
+  }
+  .center {
+    text-align: center;
   }
 ---
 
-<!-- _class: title -->
-# 🤖 AIさんの努力を<br/>"無駄"にしないために  
+# 🤖 AIさんの努力を"無駄"にしないために  
 ### 〜失敗から学ぶAI駆動開発の環境づくり〜
 
 ---
@@ -125,7 +60,7 @@ style: |
 
 <div class="highlight-box">
 
-**📱 英語物語というスマホゲームを<br/>11年開発・運営**
+**📱 英語物語というスマホゲームを11年開発・運営**
 
 **🏆 2025年 Appliv英語アプリ No.1 獲得🎉**
 
@@ -135,26 +70,23 @@ style: |
 
 ---
 
-<!-- _class: failure -->
 ## 💭 皆さんAI駆動開発は順調ですか？
 
-<div class="icon-large">😅</div>
+<div class="center">😅</div>
 
 ### 僕は全然順調ではありません。
 
 ---
 
-<!-- _class: success -->
 ## ✅ ゴンの場合：成功するケース
 
-### 🎯 自分で技術もプロジェクトも<br/>理解してる環境で
+### 🎯 自分で技術もプロジェクトも理解してる環境で
 
 - **💡 コード補完**で効率化
 - **📝 明確な指示とレビュー**で依頼
 
 ---
 
-<!-- _class: failure -->
 ## ❌ ゴンの場合：失敗するケース
 
 ### 🚨 新しい技術やプロジェクトで...
@@ -165,93 +97,95 @@ style: |
 
 ---
 
-<!-- _class: lazy -->
 ## 😴 でもゴンは...
 
-<div class="icon-large">🛋️</div>
+<div class="big-text">🛋️</div>
 
 <div class="big-text">**楽がしたい！！！**</div>
 
-<div class="medium-text">計画もレビューも<br/>なるべくサボりたい</div>
+<div class="medium-text">計画もレビューもなるべくサボりたい</div>
 
 ---
 
-## 🔍 そのために、理想のAI駆動開発を模索
+## 🔍 理想のAI駆動開発を模索
 
 <div class="highlight-box">
 
 **📚 まずは自分で技術理解**
 
-**📋 AIの作った計画書を使って<br/>自分で書く！**
+**📋 AIの作った計画書を使って自分で書く！**
 
 </div>
 
 ---
 
-<!-- _class: failure -->
 ## 😰 結局は...
 
 <div class="big-text">💤 面倒くさくなって</div>
 
-<div class="medium-text">ついAIに書かせ、<br/>レビューをサボる。</div>
+<div class="medium-text">ついAIに書かせ、レビューをサボる。</div>
 
 ---
 
-<!-- _class: solution -->
 ## 🎉 しかし！ついに！最近
 
 <div class="big-text">💡 発見した！</div>
 
 ---
 
-<!-- _class: solution -->
-# AIさんの努力を
-## **"無駄"にしない方法**
+# AIさんの努力を"無駄"にしない方法
 ### （気がする）
 
 ---
 
-<!-- _class: solution -->
-# 🛡️ 核心は
+# 🛡️ どうやって
 
-<div class="big-text">**致命的な失敗をさせない環境**</div>
+## **致命的な失敗をさせない環境**
 
-<div class="medium-text">⬇️</div>
+### ⬇️
 
-<div class="medium-text">**致命的でない失敗ができる環境**</div>
-
-<div class="medium-text">⬇️</div>
-
-<div class="medium-text">**失敗から成長できる環境**</div>
+## リファクタできなくならない。
 
 ---
 
-<!-- _class: solution -->
-## 🤔 どうやって？？
+# 🛡️ つまり
+
+## **致命的でない失敗ができる環境**
+
+### ⬇️
+
+## 汚いコードを書いても、後でリファクタ可能
+
+---
+
+# 🛡️ そして
+
+## **失敗から成長できる環境**
+
+### ⬇️
+
+## リファクタ必要性に気づける。
+
+---
+
+## 🤔 具体的には？？
 
 ### 🛡 **上位レベルのテストの充実**
-<div class="solution-item">
-汚いコード書いても、<br/>後でリファクタできる
-</div>
+汚いコード書いても、後でリファクタできる
 
 ### 🛡 **明確なアーキテクチャ（DDD）の実践**
-<div class="solution-item">
-レイヤー構造とファイル名はレビューできるので、<br/>後でリファクタ指示できる
-</div>
+レイヤー構造とファイル名はレビューできるので、後でリファクタ指示できる
 
 ### 🛡 **AIさんのタスク完了後にKPTするフロー**
-<div class="solution-item">
-失敗してから、「今」必要なリファクタを<br/>AIさんが提案できる
-</div>
+失敗してから、「今」必要なリファクタをAIさんが提案できる
 
 ---
 
-<!-- _class: quote -->
-# 💼 昔、監査法人時代の<br/>社長に言われた言葉
+## 💼 昔、監査法人時代の社長に言われた言葉
 
 <div class="highlight-box">
 
-**「カネゴンよぉー　成長したいなら、<br/>小さな失敗をたくさんしろ。<br/>致命的な失敗以外は、<br/>そこから学べば全て成功だ。」**
+**「カネゴンよぉー　成長したいなら、小さな失敗をたくさんしろ。致命的な失敗以外は、そこから学べば全て成功だ。」**
 
 </div>
 
@@ -273,7 +207,6 @@ style: |
 
 ---
 
-<!-- _class: title -->
 ## 🙏 ありがとうございました！
 
 <div class="highlight-box">
