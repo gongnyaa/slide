@@ -1,0 +1,27 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "description": "```bash marp 20250611_Avoid_wasting_AI_effort --html --allow-local-files ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "build": "marp 20250611_Avoid_wasting_AI_effort --html --allow-local-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongnyaa/slide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gongnyaa/slide/issues"
+  },
+  "homepage": "https://github.com/gongnyaa/slide#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.2",
+    "husky": "^9.1.7"
+  }
+}
