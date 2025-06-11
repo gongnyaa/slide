@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "build": "marp 20250611_Avoid_wasting_AI_effort --html --allow-local-files"
+    "build": "marp 20250611_Avoid_wasting_AI_effort --html --allow-local-files",
+    "dev": "marp -w 20250611_Avoid_wasting_AI_effort --html --allow-local-files"
   },
   "repository": {
     "type": "git",
