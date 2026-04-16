@@ -4,9 +4,23 @@ theme: default
 paginate: true
 size: 16:9
 style: |
+  :root {
+    --accent: #c8102e;
+  }
   h1 {
     font-size: 1.6em;
     white-space: nowrap;
+    color: var(--accent);
+  }
+  h2 {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.1em;
+  }
+  strong {
+    color: var(--accent);
+  }
+  section::after {
+    color: var(--accent);
   }
 ---
 
@@ -99,6 +113,8 @@ LT発表 / 2026-04-19
 3. シンプルに最適化しろ
 4. サイクルタイムを短くしろ
 5. **自動化しろ。これは最終段階だ。**
+
+> いきなり **#5** から始めて、時間を溶かしていたのかも。
 
 ---
 
